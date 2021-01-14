@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap");
+.pen {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dashoffset: 0;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+.line-one-1 {
+  clip-path: url(#one-1);
+  stroke-dasharray: 267;
+  animation-name: draw-one-1;
+}
+
+.line-nine-1 {
+  clip-path: url(#nine-1);
+  stroke-dasharray: 295;
+  animation-name: draw-nine-1;
+}
+
+.line-nine-2 {
+  clip-path: url(#nine-2);
+  stroke-dasharray: 305;
+  animation-name: draw-nine-2;
+}
+
+.line-one-2 {
+  clip-path: url(#one-2);
+  stroke-dasharray: 267;
+  animation-name: draw-one-2;
+}
+
+.line-w {
+  clip-path: url(#w);
+  stroke-dasharray: 1341;
+  animation-name: draw-w;
+  animation-timing-function: !important ease-out;
+}
+
+.line-o-1 {
+  clip-path: url(#o-1);
+  stroke-dasharray: 296;
+  animation-name: draw-o-1;
+}
+
+.line-o-2 {
+  clip-path: url(#o-2);
+  stroke-dasharray: 296;
+  animation-name: draw-o-2;
+}
+
+.line-d {
+  clip-path: url(#d);
+  stroke-dasharray: 705;
+  animation-name: draw-d;
+}
+
+.line-o-3 {
+  clip-path: url(#o-3);
+  stroke-dasharray: 337;
+  animation-name: draw-o-3;
+}
+
+.line-r {
+  clip-path: url(#r);
+  stroke-dasharray: 233;
+  animation-name: draw-r;
+}
+
+.line-k {
+  clip-path: url(#k);
+  stroke-dasharray: 671;
+  animation-name: draw-k;
+  animation-timing-function: !important ease-in;
+}
+
+.line-s {
+  clip-path: url(#s);
+  stroke-dasharray: 216;
+  animation-name: draw-s;
+  animation-timing-function: !important ease-out;
+}
+
+@keyframes draw-one-1 {
+  0% {
+    stroke-dashoffset: 267;
+  }
+  5% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-nine-1 {
+  0%,5% {
+    stroke-dashoffset: 295;
+  }
+  10% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-nine-2 {
+  0%,10% {
+    stroke-dashoffset: 305;
+  }
+  15% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-one-2 {
+  0%,15% {
+    stroke-dashoffset: 267;
+  }
+  20% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-w {
+  0%,20% {
+    stroke-dashoffset: 1341;
+  }
+  30% {
+    stroke-dashoffset: 1000;
+  }
+  40% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-o-1 {
+  0%,40% {
+    stroke-dashoffset: 296;
+  }
+  45% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-o-2 {
+  0%,45% {
+    stroke-dashoffset: 296;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-d {
+  0%,50% {
+    stroke-dashoffset: 705;
+  }
+  55% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-o-3 {
+  0%,55% {
+    stroke-dashoffset: 337;
+  }
+  60% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-r {
+  0%,60% {
+    stroke-dashoffset: 233;
+  }
+  65% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-k {
+  0%,65% {
+    stroke-dashoffset: 671;
+  }
+  70% {
+    stroke-dashoffset: 631;
+  }
+  85% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-s {
+  0%,85% {
+    stroke-dashoffset: 216;
+  }
+  90% {
+    stroke-dashoffset: 196;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.face {
+  animation-duration: 3s;
+  animation-name: show-face;
+  animation-timing-function: !important ease-in;
+  fill: white;
+}
+
+@keyframes show-face {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #333333;
+}
+#intro .intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -60%);
+  -ms-transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
+}
+
+.big {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+.big-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -moz-transition: -moz-transform 6s;
+  -o-transition: -o-transform 6s;
+  -webkit-transition: -webkit-transform 6s;
+  transition: transform 6s;
+}
+.big-pic:nth-child(3) {
+  background-position: bottom;
+}
+.big-pic.move-img {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
