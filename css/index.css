@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;500&family=Noto+Sans+TC:wght@300;500&display=swap");
 .pen {
   fill: none;
   stroke: #fff;
@@ -218,6 +216,7 @@
   width: 100vw;
   height: 100vh;
   background: #333333;
+  z-index: 999;
 }
 #intro .intro {
   position: absolute;
@@ -253,9 +252,6 @@
   -o-transition: -o-transform 6s;
   -webkit-transition: -webkit-transform 6s;
   transition: transform 6s;
-}
-.big-pic:nth-child(3) {
-  background-position: bottom;
 }
 .big-pic.move-img {
   -moz-transform: scale(1);
