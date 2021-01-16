@@ -271,6 +271,9 @@ img {
     height: 1px;
     background: #333333;
   }
+  .nav li:hover .en {
+    opacity: 1;
+  }
   .nav .buynow {
     border: unset;
     padding: unset;
