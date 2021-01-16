@@ -63,6 +63,11 @@ img {
   padding: 10px 50px;
   margin-top: 40px;
   z-index: 10;
+  -moz-transition: margin 0.5s 0.3s, background 0.3s, height 0.3s;
+  -o-transition: margin 0.5s 0.3s, background 0.3s, height 0.3s;
+  -webkit-transition: margin 0.5s, background 0.3s, height 0.3s;
+  -webkit-transition-delay: 0.3s, 0s, 0s;
+  transition: margin 0.5s 0.3s, background 0.3s, height 0.3s;
 }
 .header .logo {
   margin-top: -8px;
@@ -190,6 +195,7 @@ img {
     margin-top: 0;
     background-color: #fff;
     overflow: hidden;
+    height: 90px;
   }
   .header .logo {
     margin-top: unset;
