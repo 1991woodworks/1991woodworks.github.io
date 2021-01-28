@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@300&family=Poppins:wght@300&display=swap");
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+.loader-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #161616;
+}
+.loader-logo {
+  position: absolute;
+  width: 350px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.loader-logo-show {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.loader-logo-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.2;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transform-origin: bottom;
+}
+.loader-logo-bg img {
+  position: absolute;
+  right: 0;
+}
+
+a {
+  color: #f2f2f2;
+}
+
+.nav .buynow {
+  border: #f2f2f2 solid 1px;
+}
+.nav .buynow:before {
+  background: #f2f2f2;
+}
+.nav .buynow:hover .tw {
+  color: #161616;
+}
+
+.burger .bar {
+  background-color: #f2f2f2;
+}
+
+.main {
+  margin-top: 100vh;
+  position: relative;
+}
+
+.big {
+  height: 100vh;
+}
+.big-mask {
+  height: 50vh;
+}
+.big-pic {
+  height: 50vh;
+}
+
+.film {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10vw 0 0 0;
+  color: #f2f2f2;
+}
+.film-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.film-item {
+  width: 33.33333%;
+  margin: 0 0 100px;
+  cursor: auto;
+}
+.film-item:hover .film-img {
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.film-item:hover .film-info {
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.film-item:hover .film-link {
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 1;
+}
+.film-content {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 80%;
+}
+.film-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+}
+.film-info {
+  font-family: "Bebas Neue", "Noto Sans TC", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  background-color: #bc9a65;
+  padding: 5px 15px;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  -moz-transition: -moz-transform 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  -o-transition: -o-transform 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: transform 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+.film-link {
+  color: #161616;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  right: 30px;
+  opacity: 0;
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.film-link:hover {
+  color: #f2f2f2;
+  background-color: #bc9a65;
+}
+.film-link a {
+  color: #161616;
+}
+.film-link span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-transform: translate(7px, 4px);
+  -ms-transform: translate(7px, 4px);
+  -webkit-transform: translate(7px, 4px);
+  transform: translate(7px, 4px);
+}
+
+#logo-film {
+  -moz-animation: globe 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both infinite;
+  -webkit-animation: globe 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both infinite;
+  animation: globe 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both infinite;
+}
+
+@-moz-keyframes globe {
+  0% {
+    transform: scale3d(1, 1, 1) rotateY(0);
+  }
+  15% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  20% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  25% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  32% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  37% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  50% {
+    transform: scale3d(1, 1, 1) rotateY(360deg);
+  }
+  100% {
+    transform: scale3d(1, 1, 1) rotateY(360deg);
+  }
+}
+@-webkit-keyframes globe {
+  0% {
+    transform: scale3d(1, 1, 1) rotateY(0);
+  }
+  15% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  20% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  25% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  32% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  37% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  50% {
+    transform: scale3d(1, 1, 1) rotateY(360deg);
+  }
+  100% {
+    transform: scale3d(1, 1, 1) rotateY(360deg);
+  }
+}
+@keyframes globe {
+  0% {
+    transform: scale3d(1, 1, 1) rotateY(0);
+  }
+  15% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  20% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  25% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  32% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  37% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  50% {
+    transform: scale3d(1, 1, 1) rotateY(360deg);
+  }
+  100% {
+    transform: scale3d(1, 1, 1) rotateY(360deg);
+  }
+}
+.film-item {
+  opacity: 0;
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -moz-transition: opacity 0.5s, -moz-transform 0.8s ease-in-out;
+  -o-transition: opacity 0.5s, -o-transform 0.8s ease-in-out;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.5s, transform 0.8s ease-in-out;
+}
+.film-item.show {
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.film-item:nth-child(3n-2) {
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.film-item:nth-child(3n-1) {
+  -moz-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+.film-item:nth-child(3n) {
+  -moz-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+@media screen and (max-width: 1440px) {
+  .film {
+    max-width: unset;
+    padding: 10vw 8vw 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    background-color: #161616;
+  }
+
+  .nav {
+    background-color: #161616;
+  }
+  .nav li .tw:before {
+    background: #f2f2f2;
+  }
+  .nav .buynow {
+    border: unset;
+  }
+  .nav.active {
+    background-color: #161616;
+  }
+}
+@media screen and (max-width: 768px) {
+  .film-item {
+    width: 50%;
+    margin: 0 0 10vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .film-item {
+    width: 100%;
+  }
+}
