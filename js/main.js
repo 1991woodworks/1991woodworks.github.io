@@ -14,12 +14,20 @@ $(function(){
 			$(".header").addClass("bg");
 			$(".big-mask").addClass("show");
 			$(".scrolltop").addClass("show");
-			$('.big-title').css('bottom',scrollTop+'px');
+			$('.big-title-1').css('bottom',scrollTop+'px');
+			$('.scrolldown').css('display','none');
 		}else{
 			$(".header").removeClass("bg");
 			$(".big-mask").removeClass("show");
 			$(".scrolltop").removeClass("show");
-			$('.big-title').css('bottom','20vh');
+			$('.big-title-1').css('bottom','20vh');
+			$('.scrolldown').css('display','block');
+		}
+
+		if(scrollTop > winHeight * 0.5 ){
+			$('.big-title-2').css('bottom',scrollTop+'px');
+		}else{
+			$('.big-title-2').css('bottom','50vh');
 		}
 	}
 
