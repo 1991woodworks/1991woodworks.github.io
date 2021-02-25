@@ -10,7 +10,12 @@ $(function() {
 	$(".loader-logo-bg").animate({ width: '0%' }, 100);
 
 	//title出現
-	$(".big").addClass("open");
+	setTimeout(function(){
+		$(".big").addClass("open");
+	},1000);
+
+	
+	
 
 	//動態
 	function setScroll() {
@@ -19,6 +24,7 @@ $(function() {
 		var wWin = win.width();
 		var scroll = win.scrollTop();
 		var move = $(".contact-title, .contact-text, .contact-info-list, .contact-form, .map");
+		var color = $(".big-title");
 
 		move.each(function() {
 		var tCont = $(this).offset().top;
@@ -27,6 +33,20 @@ $(function() {
 				$(this).addClass("show");
 			}
 		})
+
+		color.each(function() {
+            var tCont = $(this).offset().top;
+
+            if (scroll > hWin * 0.3) {
+
+                $('.big-title').css('color', '#161616');
+
+            } else {
+
+                $('.big-title').css('color', '#bc9a65');
+
+            }
+        })
 	}
     
     setScroll();
