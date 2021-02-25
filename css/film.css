@@ -75,10 +75,25 @@ a {
   height: 100vh;
 }
 .big-mask {
-  height: 50vh;
+  height: 100vh;
 }
 .big-pic {
-  height: 50vh;
+  height: 100vh;
+}
+.big-content {
+  position: absolute;
+  bottom: 55vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  z-index: 10;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+.big-content img {
+  width: 100%;
 }
 
 .film {
